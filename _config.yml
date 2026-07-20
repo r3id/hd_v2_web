@@ -1,0 +1,29 @@
+title: Housing Direct
+description: >-
+  List once and reach 40+ local authorities, or search vetted stock and place
+  households — Housing Direct connects councils and landlords in one compliant
+  marketplace.
+lang: en-GB
+
+# Set these when deploying:
+#   url:     e.g. https://example.com  (or https://<user>.github.io)
+#   baseurl: e.g. /marketing-site      (only for GitHub Pages *project* sites; leave "" otherwise)
+url: ""
+baseurl: ""
+
+permalink: /blog/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Housing Direct Team
+      author_role: Editorial
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

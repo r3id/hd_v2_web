@@ -1,0 +1,10 @@
+# Open roles shown on /careers/. Empty list = empty state ("No open roles right now").
+# To advertise a role, add an entry like:
+#
+# - title: Senior Product Engineer
+#   team: Engineering
+#   location: London / Remote
+#   type: Full-time
+#   apply_url: /contact/     # or an external ATS link
+
+[]

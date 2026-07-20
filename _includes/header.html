@@ -1,0 +1,19 @@
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="{{ '/' | relative_url }}" class="brand"><img class="brand-logo" src="{{ '/assets/hd_logo.svg' | relative_url }}" alt="Housing Direct"/></a>
+    <nav class="nav">
+      <a href="{{ '/' | relative_url }}"{% if page.nav_active == 'home' %} class="active"{% endif %}>Home</a>
+      <a href="{{ '/for-landlords/' | relative_url }}"{% if page.nav_active == 'landlords' %} class="active"{% endif %}>For landlords</a>
+      <a href="{{ '/for-local-authorities/' | relative_url }}"{% if page.nav_active == 'councils' %} class="active"{% endif %}>For councils</a>
+      <a href="{{ '/for-council-housing/' | relative_url }}"{% if page.nav_active == 'housing-teams' %} class="active"{% endif %}>For housing teams</a>
+    </nav>
+    <div class="hdr-right">
+      <a href="#" class="hdr-signin">Sign in</a>
+      {% if page.header_cta == 'list' %}
+      <a href="#" class="btn btn-teal btn-sm">List your property</a>
+      {% else %}
+      <a href="{{ '/book-a-demo/' | relative_url }}" class="btn btn-teal btn-sm">Book a demo</a>
+      {% endif %}
+    </div>
+  </div>
+</header>

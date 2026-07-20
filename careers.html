@@ -1,0 +1,53 @@
+---
+layout: default
+title: "Careers"
+tab_title: "Careers · Housing Direct"
+description: "Join Housing Direct — help build the compliant marketplace that gets families into homes faster. See our open roles."
+permalink: /careers/
+---
+<section class="page-hero wrap">
+  <div class="sec-eyebrow">Careers</div>
+  <h1>Build something that matters.</h1>
+  <p class="lead">We're a small team with a big mission: get families into safe, compliant homes faster. If that sounds like your kind of work, come join us.</p>
+</section>
+
+<section class="sec" style="padding-top:44px">
+  <div class="wrap">
+    <div class="hero-photo" style="aspect-ratio:16/7;border-radius:24px"><div class="imgfill"></div></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head center"><div class="sec-eyebrow">Why us</div><h2>What you'll get</h2></div>
+    <div class="vgrid">
+      <div class="vcard"><div class="ic"><i class="fa-solid fa-heart"></i></div><h3>Real impact</h3><p>Every feature you ship helps place a household into a home. Mission over metrics.</p></div>
+      <div class="vcard"><div class="ic"><i class="fa-solid fa-house-laptop"></i></div><h3>Flexible working</h3><p>Remote-first with a London hub. Work where you do your best thinking.</p></div>
+      <div class="vcard"><div class="ic"><i class="fa-solid fa-seedling"></i></div><h3>Room to grow</h3><p>Early team, wide remit. Take ownership and grow fast with the company.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap" style="max-width:900px">
+    {% assign roles = site.data.roles %}
+    {% if roles and roles.size > 0 %}
+    <div class="sec-head"><div class="sec-eyebrow">Open roles</div><h2>We're hiring</h2></div>
+    <div class="jobs">
+      {% for role in roles %}
+      {% assign apply = role.apply_url | default: '/contact/' %}{% if apply contains '://' %}{% assign apply_href = apply %}{% else %}{% assign apply_href = apply | relative_url %}{% endif %}
+      <a href="{{ apply_href }}" class="job"><div><div class="jt">{{ role.title }}</div><div class="jm"><span>{{ role.team }}</span><span>{{ role.location }}</span><span>{{ role.type }}</span></div></div><span class="jgo">Apply <i class="fa-solid fa-arrow-right"></i></span></a>
+      {% endfor %}
+    </div>
+    <p style="margin-top:28px;font-size:16px;color:var(--ink-3)">Don't see your role? We're always keen to meet good people — <a href="{{ '/contact/' | relative_url }}" style="color:var(--teal-700);text-decoration:underline;text-underline-offset:2px">tell us what you'd bring</a>.</p>
+    {% else %}
+    <div class="sec-head"><div class="sec-eyebrow">Open roles</div><h2>No open roles right now</h2></div>
+    <div class="jobs-empty">
+      <div class="ic"><i class="fa-solid fa-inbox"></i></div>
+      <h3>Nothing open at the moment</h3>
+      <p>We're not actively hiring right now — but we grow fast and that changes often. Leave your details and we'll reach out when a role that fits comes up.</p>
+      <a href="{{ '/contact/' | relative_url }}" class="btn btn-teal btn-lg">Register your interest</a>
+    </div>
+    {% endif %}
+  </div>
+</section>
