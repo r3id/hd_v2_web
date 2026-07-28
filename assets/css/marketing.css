@@ -60,6 +60,14 @@ h1{font-size:60px;line-height:1.04;letter-spacing:-.03em;font-weight:700;margin:
 .hero-card .big{font-size:22px;font-weight:700;letter-spacing:-.02em;line-height:1}
 .hero-card .sm{font-size:13px;color:var(--ink-3);margin-top:3px}
 
+/* ---------- council logo strip ---------- */
+.logostrip{padding:8px 0 56px}
+.logostrip-label{text-align:center;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-4);margin-bottom:30px}
+.logostrip-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:22px 52px}
+.cl-holder{height:86px;display:flex;align-items:center;justify-content:center}
+.cl-holder img{width:auto;object-fit:contain;filter:grayscale(1);opacity:.72;transition:opacity .15s,filter .15s}
+.cl-holder:hover img{filter:none;opacity:1}
+
 /* ---------- section shells ---------- */
 section{scroll-margin-top:90px}
 .sec{padding:96px 0}
