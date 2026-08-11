@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Blog
-tab_title: Blog · Housing Direct
-description: Insights on council housing, compliance and the private rented sector from the Housing Direct team.
+title: "Blog"
+tab_title: "Blog · Housing Direct"
+description: "Insights on council housing, compliance and the private rented sector from the Housing Direct team."
 permalink: /blog/
 ---
 <section class="page-hero wrap">
-  <div class="sec-eyebrow">Blog</div>
+  <div class="sec-eyebrow"><i class="fa-solid fa-newspaper"></i> Blog</div>
   <h1>Notes on housing, done better.</h1>
-  <p class="lead">Practical thinking on placements, compliance and the private rented sector — for the councils and landlords we work with.</p>
+  <p class="lead">Practical thinking on placements, compliance and the private rented sector, for the councils, agents and landlords we work with.</p>
 </section>
 
 <section class="sec" style="padding-top:48px">
@@ -16,11 +16,11 @@ permalink: /blog/
     {% assign featured = site.posts | where: "featured", true | first %}
     {% if featured %}
     <a href="{{ featured.url | relative_url }}" class="blog-feat">
-      <div class="ph"><div class="imgfill"></div></div>
-      <div>
-        <span class="post cat" style="display:block;margin-bottom:12px">Featured · {{ featured.category }}</span>
-        <h2 style="letter-spacing:-.02em;margin-bottom:12px">{{ featured.title }}</h2>
-        <p style="font-size:17px;color:var(--ink-2);line-height:1.6">{{ featured.description }}</p>
+      <div class="ph">{% if featured.image %}<img src="{{ featured.image | relative_url }}" alt="{{ featured.image_alt }}"/>{% else %}<div class="imgfill"></div>{% endif %}</div>
+      <div class="bd">
+        <span class="cat" style="display:block;margin-bottom:12px">Featured · {{ featured.category }}</span>
+        <h2 style="letter-spacing:-.02em;margin-bottom:12px;font-size:30px">{{ featured.title }}</h2>
+        <p style="font-size:16.5px;color:var(--ink-2);line-height:1.6">{{ featured.description }}</p>
         <div style="margin-top:16px;font-size:14px;color:var(--ink-4)">{{ featured.date | date: "%-d %B %Y" }} · {{ featured.read_time }}</div>
       </div>
     </a>

@@ -3,9 +3,9 @@
     <a href="{{ '/' | relative_url }}" class="brand"><img class="brand-logo" src="{{ '/assets/hd_logo.svg' | relative_url }}" alt="Housing Direct"/></a>
     <nav class="nav">
       <a href="{{ '/' | relative_url }}"{% if page.nav_active == 'home' %} class="active"{% endif %}>Home</a>
-      <a href="{{ '/for-landlords/' | relative_url }}"{% if page.nav_active == 'landlords' %} class="active"{% endif %}>For landlords</a>
-      <a href="{{ '/for-local-authorities/' | relative_url }}"{% if page.nav_active == 'councils' %} class="active"{% endif %}>For councils</a>
-      <a href="{{ '/for-council-housing/' | relative_url }}"{% if page.nav_active == 'housing-teams' %} class="active"{% endif %}>For housing teams</a>
+      <a href="{{ '/for-landlords/' | relative_url }}"{% if page.nav_active == 'landlords' %} class="active"{% endif %}>Landlords</a>
+      <a href="{{ '/for-agents/' | relative_url }}"{% if page.nav_active == 'agents' %} class="active"{% endif %}>Agents</a>
+      <a href="{{ '/for-local-authorities/' | relative_url }}"{% if page.nav_active == 'councils' %} class="active"{% endif %}>Local authorities</a>
     </nav>
     <div class="hdr-right">
       <a href="#" class="hdr-signin">Sign in</a>
@@ -14,6 +14,14 @@
       {% else %}
       <a href="{{ '/book-a-demo/' | relative_url }}" class="btn btn-teal btn-sm">Book a demo</a>
       {% endif %}
+      <button class="hdr-burger" aria-label="Menu" onclick="document.body.classList.toggle('menu-open')"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-xmark"></i></button>
     </div>
   </div>
+<nav class="mobile-menu">
+    <a href="{{ '/' | relative_url }}"{% if page.nav_active == 'home' %} class="active"{% endif %}>Home</a>
+    <a href="{{ '/for-landlords/' | relative_url }}"{% if page.nav_active == 'landlords' %} class="active"{% endif %}>Landlords</a>
+    <a href="{{ '/for-agents/' | relative_url }}"{% if page.nav_active == 'agents' %} class="active"{% endif %}>Agents</a>
+    <a href="{{ '/for-local-authorities/' | relative_url }}"{% if page.nav_active == 'councils' %} class="active"{% endif %}>Local authorities</a>
+    <div class="mm-foot"><a href="#" class="btn btn-outline">Sign in</a><a href="{{ '/book-a-demo/' | relative_url }}" class="btn btn-teal">Book a demo</a></div>
+  </nav>
 </header>

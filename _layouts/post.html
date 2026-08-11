@@ -9,12 +9,12 @@ layout: default
     <h1>{{ page.title }}</h1>
     <p class="standfirst">{{ page.description }}</p>
     <div class="byline">
-      <span class="av"><div class="imgfill"></div></span>
+      {% if page.av_initials %}<span class="av" style="--avatar-color: {{ page.av_color | default: '#2b7d55' }};">{{ page.av_initials }}</span>{% else %}<span class="av av-brand"><img src="{{ '/assets/hd_mark.svg' | relative_url }}" alt="Housing Direct"/></span>{% endif %}
       <span><span class="bl-name">{{ page.author }}</span><span class="bl-meta">{{ page.author_role }} · {{ page.date | date: "%-d %B %Y" }} · {{ page.read_time }}</span></span>
     </div>
   </header>
 
-  <div class="article-cover"><div class="imgfill"></div></div>
+  <div class="article-cover"><div class="in">{% if page.image %}<img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}"/>{% else %}<div class="imgfill"></div>{% endif %}</div></div>
 
   <div class="article-body">
 {{ content }}
@@ -29,11 +29,11 @@ layout: default
   </div>
 </article>
 
-<section class="sec related" style="margin-top:64px">
+<section class="sec" style="margin-top:40px;padding-top:0">
   <div class="wrap">
-    <div class="sec-head"><div class="sec-eyebrow">Keep reading</div><h2>More from the blog</h2></div>
+    <div class="sec-head"><div><div class="sec-eyebrow"><i class="fa-solid fa-book-open"></i> Keep reading</div><h2>More from the blog</h2></div></div>
     <div class="blog-grid">
-      {% assign related = site.posts | where_exp: "p", "p.url != page.url" %}
+      {% assign related = site.posts | where_exp: "p", "p.url != page.url" | where_exp: "p", "p.featured != true" %}
       {% for p in related limit: 3 %}{% include post-card.html post=p %}{% endfor %}
     </div>
   </div>

@@ -1,0 +1,64 @@
+---
+layout: default
+title: "Thanks"
+tab_title: "Thanks · Housing Direct"
+description: "Your message has been received. We'll be in touch within one working day."
+permalink: /thanks/
+noindex: true
+---
+<section class="page-hero wrap">
+  <div class="sec-eyebrow"><i class="fa-solid fa-circle-check"></i> Message received</div>
+  <h1>Thanks, we're on it.</h1>
+  <p class="lead">Your message is with the team and we'll be in touch within one working day. In the meantime, here's a little more about what we can do for you.</p>
+</section>
+
+<section class="sec" style="padding-top:44px;padding-bottom:0">
+  <div class="wrap">
+    <div class="hero-photo" style="aspect-ratio:16/8;border-radius:24px;margin-top:0"><img src="{{ '/assets/img/hp_7.jpg' | relative_url }}" alt="A row of brick terraced houses"/></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="sec-eyebrow"><i class="fa-solid fa-compass"></i> While you're here</div><h2>Find out what we do for you</h2></div></div>
+    <div class="acards" id="thanks-cards">
+      <a href="{{ '/for-landlords/' | relative_url }}" class="acard" data-role="landlord">
+        <img src="{{ '/assets/img/hp_2.png' | relative_url }}" alt="Keys being handed over at a front door"/>
+        <div class="bd"><div class="k">For landlords</div><h3>List once, reach councils in your area</h3><p>Free to list, guaranteed rent, compliance tracked for you.</p><span class="go">Learn more <i class="fa-solid fa-arrow-right"></i></span></div>
+      </a>
+      <a href="{{ '/for-agents/' | relative_url }}" class="acard" data-role="agent">
+        <img src="{{ '/assets/img/hp_5.png' | relative_url }}" alt="An agent showing a property"/>
+        <div class="bd"><div class="k">For agents</div><h3>Every portfolio, one dashboard</h3><p>List on behalf of your landlords, keep every client separate.</p><span class="go">Learn more <i class="fa-solid fa-arrow-right"></i></span></div>
+      </a>
+      <a href="{{ '/for-local-authorities/' | relative_url }}" class="acard" data-role="la">
+        <img src="{{ '/assets/img/hp_3.jpg' | relative_url }}" alt="A row of new-build council homes"/>
+        <div class="bd"><div class="k">For local authorities</div><h3>Vetted stock,<br>ready to book</h3><p>Search your patch, place end to end, prove every step.</p><span class="go">Learn more <i class="fa-solid fa-arrow-right"></i></span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="sec-eyebrow"><i class="fa-solid fa-newspaper"></i> From the blog</div><h2>Prefer a read while you wait?</h2></div></div>
+    <div class="blog-grid">
+      {% for post in site.posts limit: 3 %}{% include post-card.html post=post %}{% endfor %}
+    </div>
+    <p style="margin-top:30px;font-size:16px"><a href="{{ '/blog/' | relative_url }}" class="tlink">See all articles <i class="fa-solid fa-arrow-right" style="font-size:13px"></i></a></p>
+  </div>
+</section>
+
+<script>
+(function () {
+  var map = { 'landlord': 'landlord', 'letting agent': 'agent', 'agent': 'agent', 'local authority': 'la' };
+  var role = new URLSearchParams(window.location.search).get('role');
+  var key = role && map[role.trim().toLowerCase()];
+  if (!key) return;
+  var grid = document.getElementById('thanks-cards');
+  var card = grid && grid.querySelector('[data-role="' + key + '"]');
+  if (!card) return;
+  var k = card.querySelector('.k');
+  if (k) k.innerHTML = '<i class="fa-solid fa-star" style="margin-right:6px"></i>' + k.textContent + ' — for you';
+  grid.prepend(card);
+})();
+</script>

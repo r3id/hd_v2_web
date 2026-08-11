@@ -13,6 +13,11 @@ baseurl: ""
 
 permalink: /blog/:slug/
 
+# Form endpoints (see README "Forms" section). Create two forms at formspree.io
+# and paste their endpoint URLs here:
+formspree_contact: "https://formspree.io/f/mkjwbngj"
+formspree_demo: "https://formspree.io/f/YOUR_DEMO_ID"
+
 defaults:
   - scope:
       path: ""

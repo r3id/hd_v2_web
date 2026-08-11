@@ -36,7 +36,7 @@ title: "For Landlords"                        # short title
 tab_title: "For Landlords · Housing Direct"   # exact <title> tag
 description: "…"                              # meta description
 permalink: /for-landlords/
-nav_active: landlords    # home | landlords | councils | housing-teams (omit for none)
+nav_active: landlords    # home | landlords | agents | councils (omit for none)
 header_cta: list         # "list" → List your property button; omit → Book a demo
 ---
 ```
@@ -61,6 +61,23 @@ featured: true                # optional — puts it in the featured slot on /bl
 ```
 
 The listing page, related-posts section, dates and URLs all update automatically. Posts publish at `/blog/<slug>/`.
+
+
+## Forms (contact & book-a-demo)
+
+GitHub Pages is static, so the two forms POST to [Formspree](https://formspree.io):
+
+The contact form is live (`formspree_contact` in `_config.yml`) and redirects to
+`/thanks/` on success. The demo form still needs its own Formspree form — create one
+and paste its endpoint into `formspree_demo` in `_config.yml`. To send it to the
+thanks page too, add `data-thanks="{{ '/thanks/' | relative_url }}"` to its `<form>`
+tag in `book-a-demo.html`; without it, success shows inline.
+
+`assets/js/forms.js` submits via AJAX so visitors stay on the page and see the branded
+success message; each form also has a `_gotcha` honeypot for spam and a `_subject` line.
+Until real endpoints are set, submitting shows a "not connected yet" alert.
+Any backend that accepts a form-encoded POST and returns JSON works the same way —
+swap the URLs in `_config.yml` if you move off Formspree later.
 
 ## Deploying to GitHub Pages
 

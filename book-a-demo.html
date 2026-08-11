@@ -2,46 +2,38 @@
 layout: default
 title: "Book a demo"
 tab_title: "Book a demo · Housing Direct"
-description: "See Housing Direct in action. Book a 20-minute walkthrough tailored to your stock and placements — no obligation."
+description: "A 20-minute walkthrough of Housing Direct, tailored to your stock and placements."
 permalink: /book-a-demo/
+header_cta: list
 ---
-<section class="page-hero wrap">
-  <div class="sec-eyebrow">Book a demo</div>
-  <h1>See Housing Direct in action.</h1>
-  <p class="lead">A 20-minute walkthrough, tailored to your stock and placements. We'll show you the platform with real examples from your patch — no slides, no obligation.</p>
-</section>
-
-<section class="sec" style="padding-top:48px">
-  <div class="wrap contact-grid">
+<section class="sec" style="padding:64px 0 96px">
+  <div class="wrap split" style="align-items:start">
     <div>
-      <h2 style="font-size:26px">What to expect</h2>
-      <ul class="flist" style="margin-top:22px">
-        <li><span class="ck"><i class="fa-solid fa-check"></i></span><span class="ft"><b>A live walkthrough</b> — the real platform, shaped around how your team works.</span></li>
-        <li><span class="ck"><i class="fa-solid fa-check"></i></span><span class="ft"><b>Relevant to you</b> — stock in your area, your placement flow, your compliance needs.</span></li>
-        <li><span class="ck"><i class="fa-solid fa-check"></i></span><span class="ft"><b>Your questions answered</b> — pricing, onboarding, integrations and security.</span></li>
-        <li><span class="ck"><i class="fa-solid fa-check"></i></span><span class="ft"><b>No pressure</b> — we'll follow up within one working day, and only if you want us to.</span></li>
+      <span class="eyebrow" style="display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;color:var(--teal-700);background:var(--teal-50);padding:7px 14px;border-radius:999px;margin-bottom:20px"><i class="fa-solid fa-calendar-check"></i> Book a demo</span>
+      <h1 style="font-size:44px;line-height:1.1;margin:0 0 16px">See Housing Direct in action.</h1>
+      <p class="sec-sub">A 20-minute walkthrough, tailored to your stock and placements. We'll show you the platform with real examples from your patch. No slides, no obligation.</p>
+      <ul class="flist" style="margin-top:28px">
+        <li><span class="ck"><i class="fa-solid fa-check"></i></span><span class="ft"><b>Tailored to you</b>: we demo with stock and scenarios from your area.</span></li>
+        <li><span class="ck"><i class="fa-solid fa-check"></i></span><span class="ft"><b>Bring the team</b>: invite colleagues, we'll answer everyone's questions.</span></li>
+        <li><span class="ck"><i class="fa-solid fa-check"></i></span><span class="ft"><b>Same-week start</b>: like what you see and you can be live within days.</span></li>
       </ul>
-      <div class="quote-wrap" style="margin-top:40px">
-        <p class="quote" style="font-size:22px">"We used to spend the first hour of every morning ringing round landlords. Now it's <span class="hl">three clicks</span> — and we can prove every step."</p>
-        <div class="quote-by"><span class="av" style="background:#966f11">JM</span><div><div class="qn">Joanne Mills</div><div class="qr">Housing Options Lead · Northshire County</div></div></div>
-      </div>
     </div>
     <div class="form-card">
-      <form onsubmit="event.preventDefault();this.innerHTML='<div style=&quot;text-align:center;padding:40px 0&quot;><div style=&quot;font-size:40px;color:var(--teal);margin-bottom:14px&quot;><i class=\'fa-solid fa-circle-check\'></i></div><h3 style=&quot;font-size:22px&quot;>Thanks — your demo request is in.</h3><p style=&quot;color:var(--ink-3);margin-top:8px&quot;>We\'ll be in touch within one working day to lock in a time.</p></div>'">
-        <div class="form-row">
-          <div class="fld"><label>First name</label><input type="text" placeholder="Joanne" required></div>
-          <div class="fld"><label>Last name</label><input type="text" placeholder="Mills" required></div>
-        </div>
-        <div class="fld"><label>Work email</label><input type="email" placeholder="you@organisation.co.uk" required></div>
-        <div class="fld"><label>Organisation</label><input type="text" placeholder="Northshire County Council" required></div>
-        <div class="fld"><label>I'm a…</label><select><option>Local authority</option><option>Council housing team</option><option>Landlord</option><option>Other</option></select></div>
-        <div class="form-row">
-          <div class="fld"><label>Area / region</label><input type="text" placeholder="e.g. West Midlands"></div>
-          <div class="fld"><label>Team size</label><select><option>Just me</option><option>2–10</option><option>11–50</option><option>50+</option></select></div>
-        </div>
-        <div class="fld"><label>Anything you'd like us to focus on? <span style="color:var(--ink-4);font-weight:400">(optional)</span></label><textarea placeholder="e.g. placing temporary accommodation, tracking certificates across a portfolio…"></textarea></div>
-        <button type="submit" class="btn btn-teal btn-lg btn-block" style="width:100%">Request demo</button>
-        <div style="font-size:13.5px;color:var(--ink-4);text-align:center;margin-top:14px">We'll be in touch within one working day. By requesting a demo you agree to our <a href="{{ '/privacy/' | relative_url }}">privacy policy</a>.</div>
+      <form method="POST" data-hd-form action="{{ site.formspree_demo }}">
+      <div class="fld"><label for="bd-name">Full name</label><input id="bd-name" name="full_name" type="text" placeholder="Jane Smith" required/></div>
+      <div class="form-row">
+        <div class="fld"><label for="bd-email">Work email</label><input id="bd-email" name="email" type="email" placeholder="jane@council.gov.uk" required/></div>
+        <div class="fld"><label for="bd-phone">Phone</label><input id="bd-phone" name="phone" type="tel" placeholder="020 8090 5100"/></div>
+      </div>
+      <div class="form-row">
+        <div class="fld"><label for="bd-org">Organisation</label><input id="bd-org" name="organisation" type="text" placeholder="Northshire County Council" required/></div>
+        <div class="fld"><label for="bd-role">I'm a…</label><select id="bd-role" name="role"><option>Local authority</option><option>Landlord</option><option>Agent</option><option>Other</option></select></div>
+      </div>
+      <div class="fld"><label for="bd-msg">Anything specific you'd like to see?</label><textarea id="bd-msg" name="message" placeholder="e.g. placements for temporary accommodation, compliance tracking…"></textarea></div>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="_subject" value="New demo request — housingdirect">
+      <button type="submit" class="btn btn-teal btn-lg" style="width:100%">Request my demo</button>
+      <p style="font-size:13px;color:var(--ink-4);margin-top:12px;text-align:center">We'll reply within one working day. No mailing lists.</p>
       </form>
     </div>
   </div>
