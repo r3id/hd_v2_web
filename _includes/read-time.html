@@ -1,0 +1,16 @@
+{%- comment -%}
+Reading time, computed from the post's own words. Usage:
+  {% include read-time.html post=page %}      (inside a post layout)
+  {% include read-time.html post=post %}      (inside a loop)
+Counts the rendered content at site.words_per_minute, rounded up, minimum 1.
+A post can still override it with `read_time:` in its front matter.
+{%- endcomment -%}
+{%- if include.post.read_time -%}
+{{ include.post.read_time }}
+{%- else -%}
+{%- assign words = include.post.content | strip_html | number_of_words: "auto" -%}
+{%- assign wpm = site.words_per_minute | default: 200 | times: 1.0 -%}
+{%- assign mins = words | divided_by: wpm | ceil -%}
+{%- if mins < 1 %}{% assign mins = 1 %}{% endif -%}
+{{ mins }} min read
+{%- endif -%}

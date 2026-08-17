@@ -4,7 +4,6 @@ tab_title: "The five certificates every listing needs, and when they expire · H
 description: "A working reference for landlords on gas, electrical, EPC, insurance and fire safety: what each one covers, how long it lasts, when the tenant needs a copy, and what happens if it lapses."
 card_excerpt: "A working reference for landlords on gas, EPC, EICR, insurance and fire safety."
 category: Compliance
-read_time: 8 min read
 image: /assets/img/hp_1a.png
 image_alt: "A period property exterior"
 ---

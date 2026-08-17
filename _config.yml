@@ -13,6 +13,10 @@ baseurl: ""
 
 permalink: /blog/:slug/
 
+# Reading speed used to compute "N min read" on posts (words per minute).
+# 180 suits this content; general prose is often reckoned at 200-250.
+words_per_minute: 180
+
 # Form endpoints (see README "Forms" section). Create two forms at formspree.io
 # and paste their endpoint URLs here:
 formspree_contact: "https://formspree.io/f/mkjwbngj"

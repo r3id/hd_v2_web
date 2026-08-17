@@ -10,7 +10,7 @@ layout: default
     <p class="standfirst">{{ page.description }}</p>
     <div class="byline">
       {% if page.av_initials %}<span class="av" style="--avatar-color: {{ page.av_color | default: '#2b7d55' }};">{{ page.av_initials }}</span>{% else %}<span class="av av-brand"><img src="{{ '/assets/hd_mark.svg' | relative_url }}" alt="Housing Direct"/></span>{% endif %}
-      <span><span class="bl-name">{{ page.author }}</span><span class="bl-meta">{{ page.author_role }} · {{ page.date | date: "%-d %B %Y" }} · {{ page.read_time }}</span></span>
+      <span><span class="bl-name">{{ page.author }}</span><span class="bl-meta">{{ page.author_role }} · {{ page.date | date: "%-d %B %Y" }} · {% include read-time.html post=page %}</span></span>
     </div>
   </header>
 

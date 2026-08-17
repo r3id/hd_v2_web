@@ -4,7 +4,6 @@ tab_title: "The real cost of an out-of-area placement · Housing Direct"
 description: "Out-of-area placements are rising sharply, and the price isn't only financial. A look at what drives them, what they cost households and councils, and what actually reduces them."
 card_excerpt: "Why out-of-area placements keep rising, and what actually brings them back down."
 category: Policy
-read_time: 6 min read
 image: /assets/img/hp_4.png
 image_alt: "A street of temporary accommodation housing"
 ---

@@ -4,7 +4,6 @@ tab_title: "Introducing automatic UPRN energy-certificate lookup · Housing Dire
 description: "Listing a property now pulls its EPC straight from the government register, so the rating, expiry date and floor area fill themselves in. Here's how it works and where it doesn't."
 card_excerpt: "List faster: we now pull your EPC straight from the government register."
 category: Product
-read_time: 4 min read
 image: /assets/img/hp_7.jpg
 image_alt: "A row of brick terraced houses"
 ---

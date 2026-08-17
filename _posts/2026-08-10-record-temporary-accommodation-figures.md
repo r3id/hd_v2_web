@@ -4,7 +4,6 @@ tab_title: "Record temporary accommodation figures: what they mean for housing t
 description: "135,580 households in temporary accommodation and £2.84bn a year going out the door. A look at what sits behind the national numbers, and where the pressure is actually coming from."
 card_excerpt: "Behind the national numbers, and where the pressure on housing teams is really coming from."
 category: Policy
-read_time: 5 min read
 image: /assets/img/hp_4a.png
 image_alt: "A modern new-build housing estate"
 ---

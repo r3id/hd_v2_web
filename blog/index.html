@@ -21,7 +21,7 @@ permalink: /blog/
         <span class="cat" style="display:block;margin-bottom:12px">Featured · {{ featured.category }}</span>
         <h2 style="letter-spacing:-.02em;margin-bottom:12px;font-size:27px">{{ featured.title }}</h2>
         <p style="font-size:16px;color:var(--ink-2);line-height:1.6">{{ featured.description }}</p>
-        <div style="margin-top:16px;font-size:13.5px;color:var(--ink-4)">{{ featured.date | date: "%-d %B %Y" }} · {{ featured.read_time }}</div>
+        <div style="margin-top:16px;font-size:13.5px;color:var(--ink-4)">{{ featured.date | date: "%-d %B %Y" }} · {% include read-time.html post=featured %}</div>
       </div>
     </a>
     {% endif %}

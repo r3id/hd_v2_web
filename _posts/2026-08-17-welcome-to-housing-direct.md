@@ -1,10 +1,9 @@
 ---
 title: "Welcome to Housing Direct"
 tab_title: "Welcome to Housing Direct · Housing Direct"
-description: "Why we built a single place for Local Authorities, landlords and letting agents to find each other, and what we're setting out to fix."
+description: "Find out why we built a single place for Local Authorities, landlords and letting agents to find each other, and what we're setting out to fix."
 card_excerpt: "Why we built a single place for councils, landlords and agents to find each other."
 category: Company
-read_time: 3 min read
 image: /assets/img/hp_8.png
 image_alt: "The Housing Direct team at work"
 featured: true
@@ -26,7 +25,7 @@ The result is slow placements, empty compliant homes, and families waiting in ac
 
 Housing Direct is one platform where accredited landlords and letting agents list properties, and Local Authorities search, book and manage placements in the areas they need.
 
-- **Every listing checked and inspected.** Landlords are ID- and document-verified, and properties carry current certificates. Housing teams only ever see stock that meets the standard.
+- **Every listing checked and inspected.** Landlords are ID and document-verified, and properties carry current certificates. Housing teams only ever see stock that meets the standard.
 - **Simple booking, placement and management.** Shortlist, send a booking request with occupant details, sign digitally, and keep managing the placement afterwards, with simple invoicing.
 - **A full audit trail, automatically.** Every search, request and approval is recorded as it happens, so evidencing a decision later isn't an archaeology project.
 - **Free to list, with no commission.** Landlords and agents keep the full agreed rent, and get access to guaranteed rent schemes where the placing authority runs one.

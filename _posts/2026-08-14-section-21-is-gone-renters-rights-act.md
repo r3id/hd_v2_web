@@ -4,7 +4,6 @@ tab_title: "Section 21 is gone: where landlords stand now · Housing Direct"
 description: "The Renters' Rights Act landed on 1 May, the last Section 21 notices have now lapsed, and the PRS Database is next. Here's what's actually changed and what to get ready for."
 card_excerpt: "What the Renters' Rights Act changed on 1 May, and what's coming next for landlords."
 category: Compliance
-read_time: 6 min read
 image: /assets/img/hp_1.png
 image_alt: "A residential street of UK rental homes"
 ---
