@@ -8,7 +8,7 @@ A post can still override it with `read_time:` in its front matter.
 {%- if include.post.read_time -%}
 {{ include.post.read_time }}
 {%- else -%}
-{%- assign words = include.post.content | strip_html | number_of_words: "auto" -%}
+{%- assign words = include.post.content | strip_html | number_of_words -%}
 {%- assign wpm = site.words_per_minute | default: 200 | times: 1.0 -%}
 {%- assign mins = words | divided_by: wpm | ceil -%}
 {%- if mins < 1 %}{% assign mins = 1 %}{% endif -%}
