@@ -1,0 +1,13 @@
+{%- comment -%}
+End-of-article summary box. Items separated by |
+  {% include takeaway.html title="Three things to take away" items="First point|Second point" %}
+{%- endcomment -%}
+<div class="a-takeaway">
+<h4>{{ include.title | default: "In short" }}</h4>
+<ul>
+{%- assign rows = include.items | split: "|" -%}
+{%- for row in rows %}
+<li>{{ row | strip }}</li>
+{%- endfor %}
+</ul>
+</div>

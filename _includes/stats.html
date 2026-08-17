@@ -1,0 +1,11 @@
+{%- comment -%}
+Teal figure band. Items separated by | , number and label separated by ::
+  {% include stats.html items="135,580::Households in TA|177,530::Children|63.8%::Include children" %}
+{%- endcomment -%}
+<div class="a-stats">
+{%- assign rows = include.items | split: "|" -%}
+{%- for row in rows -%}
+{%- assign parts = row | split: "::" -%}
+  <div class="a-stat"><span class="n">{{ parts[0] | strip }}</span><span class="l">{{ parts[1] | strip }}</span></div>
+{%- endfor -%}
+</div>

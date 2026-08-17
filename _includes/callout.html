@@ -1,0 +1,8 @@
+{%- comment -%}
+Tinted callout panel. Usage:
+  {% include callout.html label="The short version" text="One or two sentences." %}
+{%- endcomment -%}
+<div class="a-callout">
+{%- if include.label %}<strong>{{ include.label }}</strong>{% endif -%}
+<p>{{ include.text }}</p>
+</div>

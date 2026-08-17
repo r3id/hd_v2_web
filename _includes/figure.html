@@ -1,0 +1,8 @@
+{%- comment -%}
+In-article image with caption. Usage:
+  {% include figure.html src="/assets/img/hp_3.jpg" alt="..." caption="..." %}
+{%- endcomment -%}
+<figure>
+<img src="{{ include.src | relative_url }}" alt="{{ include.alt }}"/>
+{%- if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif -%}
+</figure>
