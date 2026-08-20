@@ -38,7 +38,7 @@ body.menu-open .mobile-menu{display:block}
 .mobile-menu a:not(.btn){display:block;padding:15px 4px;font-size:17.5px;font-weight:600;border-bottom:1px solid var(--line-2)}
 .mm-foot{display:flex;gap:10px;padding-top:18px}.mm-foot .btn{flex:1}
 /* hero */
-.hero{padding:56px 0 0;text-align:center}
+.hero{padding:70px 0;text-align:center}
 .hero h1{font-size:50px;line-height:1.14;max-width:30ch;margin:0 auto 18px;text-wrap:balance}
 @media(max-width:640px){.hero h1{font-size:34px}}
 .hero .sub{line-height:1.55;font-size:20px;color:var(--ink-2);max-width:52ch;margin:0 auto 30px}
@@ -50,16 +50,16 @@ body.menu-open .mobile-menu{display:block}
 .hero-photo .cap{position:absolute;left:24px;bottom:24px;background:rgba(255,255,255,.94);border-radius:999px;padding:10px 20px;font-size:13.5px;font-weight:600;display:flex;align-items:center;gap:9px}
 .hero-photo .cap i{color:var(--teal)}
 /* logo strip */
-.logostrip{padding:56px 0 8px}
+.logostrip{padding:70px 0}
 .logostrip-label{text-align:center;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-4);margin-bottom:30px}
 .logostrip-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:22px 52px}
 .cl-holder{height:86px;display:flex;align-items:center;justify-content:center}
 .cl-holder img{width:auto;max-height:var(--lh,48px);object-fit:contain;filter:grayscale(1);opacity:.72;transition:opacity .15s,filter .15s}
 .cl-holder:hover img{filter:none;opacity:1}
-@media(max-width:640px){.logostrip{padding:40px 0 0}.logostrip-row{gap:10px 30px}.cl-holder{height:58px}.cl-holder img{max-height:calc(var(--lh,48px)*.68)}}
+@media(max-width:640px){.logostrip{padding:48px 0}.logostrip-row{gap:10px 30px}.cl-holder{height:58px}.cl-holder img{max-height:calc(var(--lh,48px)*.68)}}
 /* sections */
-.sec{padding:88px 0}
-@media(max-width:640px){.sec{padding:60px 0}}
+.sec{padding:70px 0}
+@media(max-width:640px){.sec{padding:48px 0}}
 .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:40px}
 h2{font-size:38px;line-height:1.16;text-wrap:balance}
 @media(max-width:640px){h2{font-size:27px}}
@@ -108,8 +108,8 @@ h2{font-size:38px;line-height:1.16;text-wrap:balance}
 /* split quote */
 .split{display:grid;grid-template-columns:1fr;gap:44px;align-items:center}
 @media(min-width:900px){.split{grid-template-columns:1fr 1fr;gap:72px}}
-.split-media{border-radius:26px;overflow:hidden;aspect-ratio:5/4;box-shadow:0 32px 64px -30px rgba(20,27,36,.32)}
-.split-media img{width:100%;height:100%;object-fit:cover}
+.split-media{position:relative;border-radius:26px;aspect-ratio:5/4;box-shadow:0 32px 64px -30px rgba(20,27,36,.32)}
+.split-media img{width:100%;height:100%;object-fit:cover;border-radius:26px}
 .split blockquote{font-family:var(--serif);font-size:20px;font-style:italic;line-height:1.5;color:var(--ink-2);border-left:3px solid var(--teal);padding-left:22px;margin:26px 0 10px}
 .split .by{font-size:15px;color:var(--ink-3);padding-left:25px}
 /* areas */
@@ -136,7 +136,7 @@ h2{font-size:38px;line-height:1.16;text-wrap:balance}
 .qa[open] summary .ch{transform:rotate(45deg)}
 .qa .ans{padding:0 4px 22px;font-size:16px;color:var(--ink-2);line-height:1.6;max-width:68ch}
 /* final cta */
-.finalcta{text-align:center;padding:96px 0}
+.finalcta{text-align:center;padding:70px 0}
 .finalcta h2{line-height:1.16;font-size:44px}
 @media(max-width:640px){.finalcta h2{font-size:34px}}
 .finalcta p{font-size:17.5px;color:var(--ink-2);margin:14px auto 30px;max-width:46ch}
@@ -150,7 +150,7 @@ h2{font-size:38px;line-height:1.16;text-wrap:balance}
 .ft-brandcol p{font-size:15px;color:var(--ink-3);max-width:34ch;line-height:1.55;margin-top:14px}
 .ft-bottom{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;font-size:13.5px;color:var(--ink-4)}
 /* ---- subpage hero (split) ---- */
-.hero-sp{padding:64px 0 8px}
+.hero-sp{padding:70px 0}
 .hero-sp .grid{display:grid;grid-template-columns:1fr;gap:44px;align-items:center}
 @media(min-width:900px){.hero-sp .grid{grid-template-columns:1.05fr .95fr;gap:64px}}
 .hero-sp h1{font-size:50px;line-height:1.14;margin:0 0 18px;text-wrap:balance}
@@ -207,7 +207,7 @@ h2{font-size:38px;line-height:1.16;text-wrap:balance}
 @media(max-width:520px){.form-row{grid-template-columns:1fr}}
 
 /* ---- company & legal pages ---- */
-.page-hero{padding:64px 0 12px}
+.page-hero{padding:70px 0}
 .page-hero h1{font-size:50px;line-height:1.14;margin-bottom:18px;text-wrap:balance;max-width:22ch}
 @media(max-width:640px){.page-hero h1{font-size:34px}}
 .page-hero .lead{line-height:1.55;font-size:20px;color:var(--ink-2);max-width:58ch}
@@ -289,7 +289,7 @@ h2{font-size:38px;line-height:1.16;text-wrap:balance}
 .article-share .lbl{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-4);margin-right:8px}
 .sbtn{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--ink-2);transition:border-color .15s,color .15s,background .15s}
 .sbtn:hover{border-color:var(--teal);color:var(--teal-700);background:var(--teal-50)}
-.legal-hero{padding:64px 0 0;border-bottom:1px solid var(--line)}
+.legal-hero{padding:70px 0;border-bottom:1px solid var(--line)}
 .legal-hero h1{font-size:44px;line-height:1.16;margin-bottom:14px}
 @media(max-width:640px){.legal-hero h1{font-size:34px}}
 .legal-meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:15px;color:var(--ink-3);margin-bottom:28px}
@@ -360,3 +360,23 @@ h2{font-size:38px;line-height:1.16;text-wrap:balance}
 
 @media(max-width:640px){.article-body .pull{font-size:20px}}
 @media(max-width:640px){.a-stat .n{font-size:27px}}
+/* ---------- floating info cards (generic) ---------- */
+.media-float{position:absolute;left:20px;bottom:20px;right:auto;background:#fff;border-radius:16px;box-shadow:0 24px 50px -18px rgba(20,27,36,.28);padding:14px 17px;display:flex;align-items:center;gap:12px;border:1px solid var(--line-2);max-width:78%}
+.media-float.tr{left:auto;right:20px;top:20px;bottom:auto}
+.media-float .ic{width:40px;height:40px;border-radius:12px;background:var(--teal-50);color:var(--teal-700);display:grid;place-items:center;font-size:17px;flex-shrink:0}
+.media-float .big{font-size:17px;font-weight:700;line-height:1.15}
+.media-float .sm{font-size:12.5px;color:var(--ink-3);margin-top:3px}
+@media(max-width:640px){.media-float{left:12px;bottom:12px;padding:11px 13px;max-width:88%}}
+@media(max-width:640px){.media-float.tr{right:12px;top:12px}}
+@media(max-width:640px){.media-float .big{font-size:15px}}
+
+/* ---------- floating chips: gentle bob (ported from v1) ---------- */
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.bob{animation:bob 5.5s ease-in-out infinite}
+.bob-2{animation:bob 6.5s ease-in-out infinite;animation-delay:-2s}
+@media(prefers-reduced-motion:reduce){.bob,.bob-2{animation:none}}
+
+/* second chip on the split heroes, mirroring v1's two-chip arrangement */
+.hero-sp .float.tr{left:auto;right:-24px;top:36px;bottom:auto}
+@media(max-width:980px){.hero-sp .float.tr{right:16px;top:16px}}
+.media-float.tl{left:20px;top:20px;bottom:auto}

@@ -27,7 +27,7 @@ Housing Direct is one platform where accredited landlords and letting agents lis
 
 - **Every listing checked and inspected.** Landlords are ID and document-verified, and properties carry current certificates. Housing teams only ever see stock that meets the standard.
 - **Simple booking, placement and management.** Shortlist, send a booking request with occupant details, sign digitally, and keep managing the placement afterwards, with simple invoicing.
-- **A full audit trail, automatically.** Every search, request and approval is recorded as it happens, so evidencing a decision later isn't an archaeology project.
+- **A record of every step, automatically.** Every search, request and approval is saved as it happens, so showing how a decision was made later isn't an archaeology project.
 - **Free to list, with no commission.** Landlords and agents keep the full agreed rent, and get access to guaranteed rent schemes where the placing authority runs one.
 
 {% include pull.html text="One listing should be enough to reach every authority that needs it. That's the whole idea." %}

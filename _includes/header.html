@@ -8,12 +8,7 @@
       <a href="{{ '/for-local-authorities/' | relative_url }}"{% if page.nav_active == 'councils' %} class="active"{% endif %}>Local authorities</a>
     </nav>
     <div class="hdr-right">
-      <a href="#" class="hdr-signin">Sign in</a>
-      {% if page.header_cta == 'list' %}
-      <a href="#" class="btn btn-teal btn-sm">List your property</a>
-      {% else %}
       <a href="{{ '/book-a-demo/' | relative_url }}" class="btn btn-teal btn-sm">Book a demo</a>
-      {% endif %}
       <button class="hdr-burger" aria-label="Menu" onclick="document.body.classList.toggle('menu-open')"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-xmark"></i></button>
     </div>
   </div>
@@ -22,6 +17,8 @@
     <a href="{{ '/for-landlords/' | relative_url }}"{% if page.nav_active == 'landlords' %} class="active"{% endif %}>Landlords</a>
     <a href="{{ '/for-agents/' | relative_url }}"{% if page.nav_active == 'agents' %} class="active"{% endif %}>Agents</a>
     <a href="{{ '/for-local-authorities/' | relative_url }}"{% if page.nav_active == 'councils' %} class="active"{% endif %}>Local authorities</a>
-    <div class="mm-foot"><a href="#" class="btn btn-outline">Sign in</a><a href="{{ '/book-a-demo/' | relative_url }}" class="btn btn-teal">Book a demo</a></div>
+    <div class="mm-foot">
+      <a href="{{ '/book-a-demo/' | relative_url }}" class="btn btn-teal">Book a demo</a>
+    </div>
   </nav>
 </header>

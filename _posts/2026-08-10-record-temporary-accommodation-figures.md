@@ -52,7 +52,7 @@ None of that fixes the supply shortfall. It does mean fewer households in the mo
 
 If your team is spending its week ringing round landlords to find out what is available, the constraint is not effort. It is that nobody has a current, checked list of what exists in your area.
 
-That is the problem Housing Direct is built to solve: vetted stock in your required location, ready to book, with the audit trail generated as you go. [See how it works for Local Authorities](/for-local-authorities/), or [book a demo](/book-a-demo/).
+That is the problem Housing Direct is built to solve: checked properties in your required location, ready to book, with a record of every step saved as you go. [See how it works for Local Authorities](/for-local-authorities/), or [book a demo](/book-a-demo/).
 
 ---
 
